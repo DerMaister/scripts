@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jque.re/plugins/modals-lightboxes/reveal/jquery.reveal.js"></script>
+	<link rel="stylesheet" href="http://cdn.jque.re/plugins/modals-lightboxes/reveal/reveal.css">		  
+	<style type="text/css">
+		body { font-family: "HelveticaNeue","Helvetica-Neue", "Helvetica", "Arial", sans-serif; }
+		.big-link { display:block; margin-top: 100px; text-align: center; font-size: 70px; color: #06f; }
+	</style> 
+</head>
+<body>
+
+<script>
+
+	$( document ).ready(function() {
+	
+		$( "div" ).after( "<div id='test1'>Schedule</div>" );
+		$( "#test1" ).addClass( "reveal-modal" );
+		$( "#test1" ).load( "form.html form", function(){
+			$(this).append($( "<a class='close-reveal-modal'>&#215;</a>" ));
+		} );
+	
+	});
+
+</script>
+
+	<a href="#" data-reveal-id="test1">Click Me For A Modal</a>
+	<div>balbabla</div>
+
+</body>
+</html>
