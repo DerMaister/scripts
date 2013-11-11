@@ -13,3 +13,7 @@ console.log(document.referrer);
    setTimeout(function () {
        window.location.href = document.referrer;
     }, 1500);
+
+$("form, div, table, tr, td").each(function(i) {
+   $(this).attr("id", this.nodeName.toLowerCase() + "_" + i);
+});
