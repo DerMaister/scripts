@@ -3,8 +3,8 @@
 // @namespace  http://use.i.E.your.homepage/
 // @version    0.1
 // @description  enter something useful
-// @match      http://derry.gotdns.org/tmp/h.html
 // @match      http://*/nagios/cgi-bin/cmd.cgi
+// @match      https://*/nagios/cgi-bin/cmd.cgi
 // @copyright  2012+, You
 // ==/UserScript==
 
